@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Audi</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="/main.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
@@ -25,23 +25,25 @@
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">HOMEPAGE</a>
                   </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      ABOUT US
+                    </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li id="a"><a class="dropdown-item" href="#">Our Team</a></li>
+                        <li id="b"><hr class="dropdown-divider"></li>
+                        <li id="c"><a class="dropdown-item" href="#">Leadership</a></li>
+                        <li id="d"><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Partners</a></li>
+                      </ul>
+                    </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">ABOUT US</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link active " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link active " href="#">
                       PRODUCTS
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li id="a"><a class="dropdown-item" href="#">Our Team</a></li>
-                      <li id="b"><hr class="dropdown-divider"></li>
-                      <li id="c"><a class="dropdown-item" href="#">Leadership</a></li>
-                      <li id="d"><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Partnerts</a></li>
-                    </ul>
                   </li>
                   <li>
-                    <button class="btn btn-third" type="submit">CONTACT US</button>
+                    <button class="nav-button" type="submit">CONTACT US</button>
                   </li>
                 </ul>
               </div>
@@ -153,7 +155,7 @@
         </div>
         <div class="row d-flex justify-content-center" id="products-row">
           <div class="col-3">
-            <div class="card h-100" style="width: 16.5rem;" id="products-card">
+            <div class="card" style="width: 16.5rem;" id="products-card">
               <img src="./assets/Product Images/product-card-audi-q3.png" class="products-image" alt="q3" height="88" width="189">
                 <p class="products-card-text">5 Seats, 4 Doors</p>
                 <p class="products-card-name">Audi Q3 2020</p>
@@ -176,40 +178,102 @@
             </div>
           </div>
           <div class="col-3">
-            <div class="card h-100" style="width: 16.5rem;" id="products-card">
-              <img src="./assets/Product Images/product-card-audi-a4.png" class="products-image" alt="a4" height="80" width="192">
+            <div class="card" style="width: 16.5rem;" id="products-card">
+              <img src="./assets/Product Images/product-card-audi-a4.png" class="products-image" alt="a4" height="88" width="189">
                 <p class="products-card-text">5 Seats, 4 Doors</p>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
+                <p class="products-card-name">Audi A$ 2020</p>
+                <a href="#" class="card-link">Configurator</a>  
+                <ul>
+                  <li>
+                    Includes 300 free km
+                  </li>
+                  <li>
+                    Theft Protection
+                  </li>
+                  <li>
+                    Non Refundable
+                  </li>
+                </ul> 
+                <div class="products-card-footer">
+                  <p>Starting from<br><span>24.999 €</span></p>
+                  <button>Buy Now</button>
+                </div>
             </div>
           </div>
           <div class="col-3">
-            <div class="card h-100" style="width: 16.5rem;" id="products-card">
-              <div class="products-new">
-                <p>NEW</p>
-              </div>
-              <img src="./assets/Product Images/product-card-audi-a3.png" class="products-image" alt="a3" height="90" width="190">
+            <div class="card" style="width: 16.5rem;" id="products-card">
+              <div class="products-new"><span>NEW</span></div>
+              <img src="./assets/Product Images/product-card-audi-a3.png" class="products-image" alt="a3" height="88" width="189">
                 <p class="products-card-text">5 Seats, 4 Doors</p>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
+                <p class="products-card-name">Audi A3 2020</p>
+                <a href="#" class="card-link">Configurator</a>  
+                <ul>
+                  <li>
+                    Includes 300 free km
+                  </li>
+                  <li>
+                    Theft Protection
+                  </li>
+                  <li>
+                    Non Refundable
+                  </li>
+                </ul> 
+                <div class="products-card-footer">
+                  <p>Starting from<br><span>19.999 €</span></p>
+                  <button>Buy Now</button>
+                </div>
             </div>
           </div>
           <div class="col-3">
-            <div class="card h-100" style="width: 16.5rem;" id="products-card">
-              <div class="products-new">
-                <p>NEW</p>
-              </div>
-              <img src="./assets/Product Images/product-card-audi-q7.png" class="products-image" alt="q7" height="97" width="192">
+            <div class="card" style="width: 16.5rem;" id="products-card">
+              <div class="products-new"><span>NEW</span></div>
+              <img src="./assets/Product Images/product-card-audi-q7.png" class="products-image" alt="q7" height="88" width="189">
                 <p class="products-card-text">5 Seats, 4 Doors</p>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
+                <p class="products-card-name">Audi Q7 2020</p>
+                <a href="#" class="card-link">Configurator</a>  
+                <ul>
+                  <li>
+                    Includes 300 free km
+                  </li>
+                  <li>
+                    Theft Protection
+                  </li>
+                  <li>
+                    Non Refundable
+                  </li>
+                </ul> 
+                <div class="products-card-footer">
+                  <p>Starting from<br><span>39.999 €</span></p>
+                  <button>Buy Now</button>
+                </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
+
+<!--------------------------CONTACT FORM  ---------------------------------------------->
+
+    <section id="contact-form">
+      
+        <div class="row g-0" id="contact-form-row">
+          <div class="col-7" id="contact-column">
+            <p class="new-arrival">CONTACT US</p>
+            <p class="contact-title">If you have any questions, don’t hesitate to contact us.</p>
+            <p class="contact-footer">© 2020 FSD. ALL RIGHTS RESERVED</p>
+          </div>
+          <div class="col-6" id="contact-column2">
+            <form>
+              <div class="contact-input">
+                <input type="text" id="kita" class="form-name"  required placeholder="ENTER YOUR NAME *">
+                <input type="email" class="form-email" required placeholder="ENTER YOUR EMAIL *">
+                <textarea style="resize: none;" class="form-text" required placeholder="YOUR MESSAGE *"></textarea>
+                <button class="form-button" type="submit">SUBMIT</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      
     </section>
 </body>
 </html>
