@@ -16,6 +16,7 @@ $graytext:#a8a8a8;
 @import "./node_modules/bootstrap/scss/transitions";
 @import "./node_modules/bootstrap/scss/navbar";
 @import "./node_modules/bootstrap/scss/buttons";
+@import "./node_modules/bootstrap/scss/modal";
 
     
 @mixin divider-animation {
@@ -653,20 +654,21 @@ body
     color: rgba(223, 223, 223, 0.651);
     padding-left: 16%;
 }
-.modal-button2{
-    text-align: center;
-    font-size:80%;
-    letter-spacing: 1px;
-    font-weight: 300;
-    color: #cfcfcf;
-    background-color: #212121;
+.modal-title {
+    display: flex;
+    flex-direction: row;
+}
+
+.modal-close {
+    position:fixed;
+    right:13.5%;
+    top:27.5%;
+    width: 40px;
     height: 40px;
-    width:40px;
+    border-radius: 50%;
     border: none;
-    border-radius:10px;
-    font-family: 'Roboto Condensed', sans-serif;
-    color: rgba(223, 223, 223, 0.651);
-    padding-left: 16%;
+    background-color: #212121;
+    color: white;
 }
 
 .btn{
@@ -724,12 +726,17 @@ body
     font-size: 120%;
     padding-left: 2%;
     margin-bottom: 0;
+    width: 50%;
 }
 
 .modal-config2 {
     color: rgba(146, 146, 146, 0.849);
     font-size: 90%;
     padding-left: 2%;
+}
+
+#price1 {
+    margin-left: auto;
 }
 
 
@@ -749,8 +756,16 @@ body
 
 
     .gray-background{
-        display: none;
+        width: 80%;
+        height: 350px;
     }
+    .gray-background img{
+        width: 150px;
+    }
+    .gray-background p {
+        text-align: center;
+    }
+
 
     .boxes {
         display: flex;
@@ -785,7 +800,7 @@ body
 
     .contact-input {
         width: 100%;
-        margin-left: 13%;
+        margin-left: 12%;
         height: 600px;
     }
 

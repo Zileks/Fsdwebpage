@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audi</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="./main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Roboto+Condensed&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>    
-    <script type="module" defer src="/src/js/index.js"></script>
+    <script type="module" defer src="./src/js/index.js"></script>
 </head>
 <body>
   <div id="img">
@@ -296,39 +296,42 @@
           <img src="./assets/Product Images/product-card-audi-q7.png"/>
           <p class="products-card-text">5 Seats, 4 Doors</p>
           <p class="modal-card-name">Audi Q7 2020</p>
-          <button class="modal-button" id="close" data-bs-dismiss="modal" aria-label="Close">Starting from<br><span class="modal-price">39.999 €</span></button>
+          <button onclick="myFunction()" class="modal-button" id="close" data-bs-dismiss="modal" aria-label="Close">Starting from<br><span class="modal-price">39.999 €</span></button>
         </div>
         <div class="col-8" id="modal-col2">
-          <p class="modal-config">Audi Configurator</p>
+          <div class="modal-title"> 
+            <p class="modal-config">Audi Configurator</p>
+            <button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+          </div>
           <p class="modal-config2">Create your own audi.</p>
           <div class="group" role="group" aria-label="Basic checkbox toggle button group">
-            <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+            <input checked class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
             <p class="modal-bonus">48-V electircal system</p>
             <p class="modal-price1">0,- EUR</p>
           </div>
           <hr class="modal-divider">
           <div class="group" role="group" aria-label="Basic checkbox toggle button group">
-            <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+            <input onclick="handleChange()" id="check1" class="form-check-input mt-0" type="checkbox" value="true" aria-label="Checkbox for following text input">
             <p class="modal-bonus">Adaptive air suspension - sport</p>
-            <p class="modal-price1">278,60 EUR</p>
+            <p class="modal-price1" id="price1">278,60 EUR</p>
           </div>
           <hr class="modal-divider">
           <div class="group" role="group" aria-label="Basic checkbox toggle button group">
-            <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+            <input id="check2" class="form-check-input mt-0" type="checkbox" value="558.78" aria-label="Checkbox for following text input">
             <p class="modal-bonus">Acoustic side windows -optional</p>
-            <p class="modal-price1">558,78 EUR</p>
+            <p class="modal-price1" id="price2">558,78 EUR</p>
           </div>
           <hr class="modal-divider">
           <div class="group" role="group" aria-label="Basic checkbox toggle button group">
-            <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+            <input id="check3" class="form-check-input mt-0" type="checkbox" value="357.29" aria-label="Checkbox for following text input">
             <p class="modal-bonus">Acoustic and heat-insulating glass</p>
-            <p class="modal-price1">357,29 EUR</p>
+            <p class="modal-price1" id="price3">357,29 EUR</p>
           </div>
           <hr class="modal-divider">
           <div class="group" role="group" aria-label="Basic checkbox toggle button group">
-            <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+            <input id="check4" class="form-check-input mt-0" type="checkbox" value="637.48" aria-label="Checkbox for following text input">
             <p class="modal-bonus">Ambiental LED</p>
-            <p class="modal-price1">637,48 EUR</p>
+            <p class="modal-price1" id="price4">637,48 EUR</p>
           </div>
         </div>
       </div>
