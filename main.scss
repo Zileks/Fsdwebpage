@@ -406,17 +406,24 @@ body
     text-align: center;
 }
 
+#myBtn {
+    background-color: transparent !important;
+}
+
+#myBtn1 {
+    background-color: transparent !important;
+}
+
 #products-card button {
     text-decoration: none;
     text-align: center;
     font-size: 85%;
     border: none;
-    background-color: transparent;
-    color: #0d6efd;
+    background-color: rgba(255, 192, 203, 0.514);
 }
 
 #products-card ul {
-    list-style-image: url('/assets/Path.svg');
+    list-style-image: url('./assets/Path.svg');
     text-align: left;
     display: flex;
     flex-direction: column;

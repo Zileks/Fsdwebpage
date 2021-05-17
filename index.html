@@ -168,7 +168,7 @@
               <img src="./assets/Product Images/product-card-audi-q3.png" class="products-image" alt="q3" height="88" width="189">
                 <p class="products-card-text">5 Seats, 4 Doors</p>
                 <p class="products-card-name">Audi Q3 2020</p>
-                <button  class="card-link">Configurator</button>  
+                <button id="myBtn1" class="card-link">Configurator</button>  
                 <ul>
                   <li>
                     Includes 300 free km
@@ -191,7 +191,7 @@
               <img src="./assets/Product Images/product-card-audi-a4.png" class="products-image" alt="a4" height="88" width="189">
                 <p class="products-card-text">5 Seats, 4 Doors</p>
                 <p class="products-card-name">Audi A$ 2020</p>
-                <button class="card-link">Configurator</button>  
+                <button id="myBtn1" class="card-link">Configurator</button>  
                 <ul>
                   <li>
                     Includes 300 free km
@@ -215,7 +215,7 @@
               <img src="./assets/Product Images/product-card-audi-a3.png" class="products-image" alt="a3" height="88" width="189">
                 <p class="products-card-text">5 Seats, 4 Doors</p>
                 <p class="products-card-name">Audi A3 2020</p>
-                <button  class="card-link">Configurator</button>  
+                <button id="myBtn1" class="card-link">Configurator</button>  
                 <ul>
                   <li>
                     Includes 300 free km
@@ -252,7 +252,7 @@
                   </li>
                 </ul> 
                 <div class="products-card-footer">
-                  <p>Starting from<br><span>39.999 €</span></p>
+                  <p>Starting from<br><span id="opa">39.999 €</span></p>
                   <button>Buy Now</button>
                 </div>
             </div>
@@ -296,7 +296,7 @@
           <img src="./assets/Product Images/product-card-audi-q7.png"/>
           <p class="products-card-text">5 Seats, 4 Doors</p>
           <p class="modal-card-name">Audi Q7 2020</p>
-          <button onclick="myFunction()" class="modal-button" id="close" data-bs-dismiss="modal" aria-label="Close">Starting from<br><span class="modal-price">39.999 €</span></button>
+          <button  class="modal-button" id="close" data-bs-dismiss="modal" aria-label="Close">Starting from<br><span class="modal-price" id="zile">39.999 €</span></button>
         </div>
         <div class="col-8" id="modal-col2">
           <div class="modal-title"> 
@@ -305,34 +305,77 @@
           </div>
           <p class="modal-config2">Create your own audi.</p>
           <div class="group" role="group" aria-label="Basic checkbox toggle button group">
-            <input checked class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+            <input checked class="form-check-input mt-0" type="checkbox"  aria-label="Checkbox for following text input">
             <p class="modal-bonus">48-V electircal system</p>
             <p class="modal-price1">0,- EUR</p>
           </div>
           <hr class="modal-divider">
           <div class="group" role="group" aria-label="Basic checkbox toggle button group">
-            <input onclick="handleChange()" id="check1" class="form-check-input mt-0" type="checkbox" value="true" aria-label="Checkbox for following text input">
+            <input onchange="myFunction()" id="check1" value="278.60" class="form-check-input mt-0" type="checkbox"  aria-label="Checkbox for following text input">
             <p class="modal-bonus">Adaptive air suspension - sport</p>
             <p class="modal-price1" id="price1">278,60 EUR</p>
           </div>
           <hr class="modal-divider">
           <div class="group" role="group" aria-label="Basic checkbox toggle button group">
-            <input id="check2" class="form-check-input mt-0" type="checkbox" value="558.78" aria-label="Checkbox for following text input">
+            <input onchange="myFunction()" id="check2" value="558.78" class="form-check-input mt-0" type="checkbox"  aria-label="Checkbox for following text input">
             <p class="modal-bonus">Acoustic side windows -optional</p>
             <p class="modal-price1" id="price2">558,78 EUR</p>
           </div>
           <hr class="modal-divider">
           <div class="group" role="group" aria-label="Basic checkbox toggle button group">
-            <input id="check3" class="form-check-input mt-0" type="checkbox" value="357.29" aria-label="Checkbox for following text input">
+            <input onchange="myFunction()" id="check3" value="357.29" class="form-check-input mt-0" type="checkbox"  aria-label="Checkbox for following text input">
             <p class="modal-bonus">Acoustic and heat-insulating glass</p>
             <p class="modal-price1" id="price3">357,29 EUR</p>
           </div>
           <hr class="modal-divider">
           <div class="group" role="group" aria-label="Basic checkbox toggle button group">
-            <input id="check4" class="form-check-input mt-0" type="checkbox" value="637.48" aria-label="Checkbox for following text input">
+            <input onchange="myFunction()" id="check4" value="637.48" class="form-check-input mt-0" type="checkbox" value="637.48" aria-label="Checkbox for following text input">
             <p class="modal-bonus">Ambiental LED</p>
             <p class="modal-price1" id="price4">637,48 EUR</p>
           </div>
+          <script>
+            function myFunction() {
+              var isChecked1 = document.getElementById('check1').checked;
+              var isChecked2 = document.getElementById('check2').checked;
+              var isChecked3 = document.getElementById('check3').checked;
+              var isChecked4 = document.getElementById('check4').checked;
+              console.log(isChecked1,isChecked2,isChecked3,isChecked4);
+
+              if(isChecked1){
+                var price1 = 278.6;
+              }
+              else{
+                  price1 = 0;
+              }
+              if(isChecked2){
+                var price2 = 558.78;
+              }
+              else{
+                  price2 = 0;
+              }
+              if(isChecked3){
+                var price3 = 357.29;
+              }
+              else{
+                  price3 = 0;
+              }
+              if(isChecked4){
+                var price4 = 637.48;
+              }
+              else{
+                  price4 = 0;
+              }
+              
+              var price = 39999;
+              var total = (price + price1 + price2 + price3 + price4).toString()
+              var totals = (total.slice(0,2) + '.' + total.slice(2) );
+              var totalValue = totals.slice(0,6) + ',' + total.slice(6) + '€';
+              
+
+              document.getElementById('zile').innerHTML = totalValue;
+              document.getElementById('opa').innerHTML = totalValue;
+            }
+          </script>
         </div>
       </div>
     </div>
