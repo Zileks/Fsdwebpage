@@ -1278,7 +1278,7 @@ body {
 }
 
 #img {
-  background-image: url(/assets/header-img-1920.jpg);
+  background-image: url(./assets/header-img-1920.jpg);
   background-position-y: 100%;
   background-size: cover;
   min-height: 100vh;

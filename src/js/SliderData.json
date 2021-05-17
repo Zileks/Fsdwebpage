@@ -2,11 +2,11 @@
     "pictures" : [
         { 
            "description":"BMW 1920",
-           "imageurl": "../assets/header-img-1920.jpg"
+           "imageurl": "./assets/header-img-1920.jpg"
        },
        { 
             "description":"BMW 1440",
-            "imageurl": "../assets/header-img-1440.jpg"
+            "imageurl": "./assets/header-img-1440.jpg"
         }
         
     ]
